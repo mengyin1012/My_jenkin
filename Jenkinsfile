@@ -1,9 +1,10 @@
 pipeline {
-    agent { master 'python:3.5.1' }
+    agent any
     stages {
-        stage('build') {
+        stage('Hello') {
             steps {
-                sh 'python --version'
+                sh cd /Users/mengyin/Downloads/jenkin
+                touch 1.txt
             }
         }
     }
