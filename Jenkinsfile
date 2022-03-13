@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    agent { node 'macbook' }
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
-                sh "cd /Users/mengyin/Downloads/jenkin"
+                sh 'python --version'
             }
         }
     }
